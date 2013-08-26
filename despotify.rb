@@ -10,6 +10,7 @@ class Despotify < Formula
   depends_on 'mpg123'
 
   def install
+    system "cp Makefile.local.mk.dist Makefile.local.mk"
     system "make Makefile.local.mk"
     inreplace "Makefile.local.mk", "# INSTALL_PREFIX = /usr", "INSTALL_PREFIX = #{prefix}"
     system "make"
