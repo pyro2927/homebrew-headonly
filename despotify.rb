@@ -1,7 +1,7 @@
 require 'formula'
 
 class Despotify < Formula
-  head 'http://svn.code.sf.net/p/despotify/code/'
+  head 'http://svn.code.sf.net/p/despotify/code/src'
   homepage 'http://despotify.se/'
 
   depends_on 'pkg-config' => :build
